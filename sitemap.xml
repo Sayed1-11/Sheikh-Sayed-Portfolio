@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>http://127.0.0.1:5500/</loc>
+    <loc>https://sheikh-sayed.onrender.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>http://127.0.0.1:5500/work.html</loc>
+    <loc>https://sheikh-sayed.onrender.com/work.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>http://127.0.0.1:5500/about.html</loc>
+    <loc>https://sheikh-sayed.onrender.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>http://127.0.0.1:5500/contact.html</loc>
+    <loc>https://sheikh-sayed.onrender.com/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
