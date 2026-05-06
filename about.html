@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About — Sheikh Sayed, Web Developer based in Bangladesh." />
+  <title>About — Sheikh Sayed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="transitions.css" />
+</head>
+
+<body class="page-about">
+
+
+  <!-- Navigation -->
+  <nav class="nav nav--light" id="nav">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo nav-logo--dark">© Sheikh Sayed</a>
+    </div>
+    <div class="nav-right">
+      <a href="work.html" class="nav-link nav-link--dark">Work</a>
+      <a href="about.html" class="nav-link nav-link--dark nav-link--active">About</a>
+      <a href="contact.html" class="nav-link nav-link--dark">Contact</a>
+    </div>
+    <button class="nav-menu-btn nav-menu-btn--dark" id="menu-btn" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <button class="sidebar-menu-btn sidebar-menu-btn--dark" id="sidebar-menu-btn" aria-label="Sidebar Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="work.html" class="mobile-nav-link">Work</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <svg class="sidebar-curve" viewBox="0 0 100 1000" preserveAspectRatio="none">
+      <path id="sidebar-path" d="M100,0 L100,1000 L100,1000 C100,1000 100,500 100,0 L100,0 Z"></path>
+    </svg>
+    <div class="sidebar-inner">
+      <div class="sidebar-top">
+        <div class="sidebar-nav-label">Navigation</div>
+        <nav class="sidebar-nav">
+          <a href="index.html" class="sidebar-link">Home</a>
+          <a href="work.html" class="sidebar-link">Work</a>
+          <a href="about.html" class="sidebar-link active">About</a>
+          <a href="contact.html" class="sidebar-link">Contact</a>
+        </nav>
+      </div>
+      <div class="sidebar-footer">
+        <div class="sidebar-nav-label">Socials</div>
+        <div class="sidebar-socials">
+          <a href="#" class="sidebar-social-link">GitHub</a>
+          <a href="#" class="sidebar-social-link">LinkedIn</a>
+          <a href="#" class="sidebar-social-link">Twitter</a>
+          <a href="#" class="sidebar-social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main>
+
+    <!-- About Hero -->
+    <section class="about-hero-massive">
+      <div class="container hero-massive-container">
+        <h1 class="about-massive-title reveal">Helping brands thrive <br> in the digital world</h1>
+
+        <!-- Interactive Globe -->
+        <div class="globe-container reveal" id="hero-globe">
+          <div class="globe-circle">
+            <svg class="globe-svg" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="48" fill="none" stroke="white" stroke-width="1" />
+              <!-- Longitude lines -->
+              <ellipse cx="50" cy="50" rx="35" ry="48" fill="none" stroke="white" stroke-width="1" />
+              <ellipse cx="50" cy="50" rx="15" ry="48" fill="none" stroke="white" stroke-width="1" />
+              <line x1="50" y1="2" x2="50" y2="98" stroke="white" stroke-width="1" />
+              <!-- Latitude lines -->
+              <ellipse cx="50" cy="50" rx="48" ry="35" fill="none" stroke="white" stroke-width="1" />
+              <ellipse cx="50" cy="50" rx="48" ry="15" fill="none" stroke="white" stroke-width="1" />
+              <line x1="2" y1="50" x2="98" y2="50" stroke="white" stroke-width="1" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="about-hero-divider reveal"></div>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="about-intro">
+      <div class="container container--narrow about-intro-grid">
+        <div class="about-intro-left reveal">
+          <p class="about-intro-text">
+            I craft digital experiences that are fast, accessible, and beautifully designed — from pixel-perfect
+            interfaces to robust back-end systems.
+          </p>
+        </div>
+        <div class="about-intro-right reveal">
+          <div class="about-portrait-massive">
+            <img src="assets/sayed.png" alt="Sheikh Sayed" />
+          </div>
+          <div class="about-intro-sub">
+            <p>My journey into web development started with curiosity and grew into a passion. I love the intersection
+              of design and code — where aesthetics meet functionality to create something truly meaningful.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="about-services">
+      <div class="container container--wide">
+        <h2 class="services-heading reveal">I can help you with ..</h2>
+
+        <div class="services-massive-list">
+          <!-- Column 01 -->
+          <div class="service-massive-item reveal">
+            <div class="service-top">
+              <span class="service-massive-num">01</span>
+              <div class="service-line"></div>
+            </div>
+            <h3 class="service-massive-title">Design</h3>
+            <p class="service-massive-desc">With a solid track record in designing websites, I deliver strong and
+              user-friendly digital designs. (Since 2024 only in combination with development)</p>
+          </div>
+
+          <!-- Column 02 -->
+          <div class="service-massive-item reveal">
+            <div class="service-top">
+              <span class="service-massive-num">02</span>
+              <div class="service-line"></div>
+            </div>
+            <h3 class="service-massive-title">Development</h3>
+            <p class="service-massive-desc">I build scalable websites from scratch that fit seamlessly with design. My
+              focus is on micro animations, transitions and interaction. Building with Webflow (or Kirby CMS).</p>
+          </div>
+
+          <!-- Column 03 -->
+          <div class="service-massive-item reveal">
+            <div class="service-top">
+              <span class="service-massive-num">03</span>
+              <div class="service-line"></div>
+            </div>
+            <h3 class="service-massive-title">✦ The full package</h3>
+            <p class="service-massive-desc">A complete website from concept to implementation, that's what makes me
+              stand out. My great sense for design and my development skills enable me to create kick-ass projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack Marquee (Replacing Parallax) -->
+    <section class="stack-marquee-section">
+      <div class="marquee-marquee">
+        <div class="marquee-track" id="stack-marquee">
+          <span>HTML5</span><span class="m-dot">·</span>
+          <span>CSS3</span><span class="m-dot">·</span>
+          <span>JavaScript</span><span class="m-dot">·</span>
+          <span>React</span><span class="m-dot">·</span>
+          <span>Node.js</span><span class="m-dot">·</span>
+          <span>Python</span><span class="m-dot">·</span>
+          <span>Django</span><span class="m-dot">·</span>
+          <span>GSAP</span><span class="m-dot">·</span>
+          <span>Figma</span><span class="m-dot">·</span>
+          <span>Git</span><span class="m-dot">·</span>
+          <span>MongoDB</span><span class="m-dot">·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience (Premium Table) -->
+    <section class="timeline-section reveal">
+      <div class="container container--wide">
+        <div class="services-heading">Experience</div>
+
+        <div class="timeline-table">
+          <!-- Row 1 -->
+          <div class="timeline-row">
+            <div class="tl-col-company">
+              <span class="tl-company">Contractual</span>
+              <span class="tl-loc">Remote</span>
+            </div>
+            <div class="tl-col-role">
+              <h3 class="tl-role">Backend Developer</h3>
+            </div>
+            <div class="tl-col-year">
+              <span class="tl-year">2024 June — 2024 November</span>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="timeline-row">
+            <div class="tl-col-company">
+              <span class="tl-company">Tech Startup</span>
+              <span class="tl-loc">Dhaka</span>
+            </div>
+            <div class="tl-col-role">
+              <h3 class="tl-role">Full Stack Developer</h3>
+            </div>
+            <div class="tl-col-year">
+              <span class="tl-year">2025 November — 2026 February</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <footer class="page-footer">
+      <div class="page-footer-inner">
+        <div class="footer-heading-wrap">
+          <div class="footer-avatar">
+            <img src="assets/sayed.png" alt="Sheikh Sayed" />
+          </div>
+          <h2 class="footer-heading">Let's work<br />together</h2>
+        </div>
+        <div class="footer-cta-wrap">
+          <span class="footer-arrow">↙</span>
+          <a href="contact.html" class="get-in-touch-btn"><span>Get in touch</span></a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <div>
+            <span class="footer-meta-label">VERSION</span>
+            <span class="footer-meta-val">2025 © Edition</span>
+          </div>
+          <div>
+            <span class="footer-meta-label">LOCAL TIME</span>
+            <span class="footer-meta-val" id="local-time">—</span>
+          </div>
+        </div>
+        <div class="footer-bottom-right">
+          <span class="footer-meta-label">SOCIALS</span>
+          <div class="social-links">
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+  <script src="pages.js"></script>
+  <script src="transitions.js"></script>
+</body>
+
+</html>

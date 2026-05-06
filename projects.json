@@ -1,0 +1,307 @@
+[
+  {
+    "id": "ecommerce",
+    "title": "E-Commerce Platform",
+    "category": "website",
+    "role": "Design & Development",
+    "services": "UI/UX, Full Stack",
+    "year": "2024",
+    "location": "Bangladesh",
+    "heading": "Elevating the shopping<br>experience online.",
+    "description": "The challenge was to create a modern, high-conversion e-commerce platform that feels both premium and accessible. We focused on minimal design, buttery smooth transitions, and a robust backend.",
+    "color": "#a8b5ff",
+    "heroColor": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    "gallery": [
+      "./assets/project-hero-1 (1).png",
+      "./assets/project-hero-1 (2).png",
+      "./assets/project-hero-1 (3).png",
+      "./assets/project-hero-1 (4).png"
+    ]
+  },
+  {
+    "id": "posh-logo",
+    "title": "Posh Gadget",
+    "category": "logo",
+    "role": "Logo Design",
+    "services": "Identity, Typography",
+    "year": "2024",
+    "location": "Bangladesh",
+    "heading": "Simplicity is the<br>ultimate sophistication.",
+    "description": "A clean, vector-based logo design for a modern tech startup. Focused on geometric shapes and balanced negative space.",
+    "color": "rgba(161, 39, 245, 0.8)",
+    "heroColor": "linear-gradient(135deg, #7913d2a6 0%, #a930e79a 100%)",
+    "gallery": [
+      "./assets/posh1.png",
+      "./assets/posh2.png"
+    ]
+  },
+  {
+    "id": "marshall-logo",
+    "title": "Mashall Agency",
+    "category": "logo",
+    "role": "Logo Design",
+    "services": "Identity, Typography",
+    "year": "2026",
+    "location": "Bangladesh",
+    "heading": "Simplicity is the<br>ultimate sophistication.",
+    "description": "A clean, vector-based logo design for a modern tech startup. Focused on geometric shapes and balanced negative space.",
+    "color": "#1a1a1a",
+    "heroColor": "linear-gradient(135deg, #1a1a1a 0%, #ffffff 100%)",
+    "gallery": [
+      "./assets/marshall.png"
+    ]
+  },
+  {
+    "id": "event-poster",
+    "title": "Tech Conference Poster",
+    "category": "poster",
+    "role": "Graphic Design",
+    "services": "Print, Visual Art",
+    "year": "2023",
+    "location": "Bangladesh",
+    "heading": "Visualizing the future<br>of technology.",
+    "description": "A vibrant, futuristic poster designed for a major tech conference. Featuring bold gradients and 3D abstract elements.",
+    "color": "#a18cd1",
+    "heroColor": "linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%)",
+    "gallery": [
+      "./assets/poster.png"
+    ]
+  },
+  {
+    "id": "promo-banner",
+    "title": "Social Media Banners",
+    "category": "banner",
+    "role": "Graphic Design",
+    "services": "Digital Marketing, Ad Design",
+    "year": "2023",
+    "location": "Bangladesh",
+    "heading": "Capturing attention<br>in every scroll.",
+    "description": "A series of high-impact web banners for an e-commerce campaign. Optimized for conversion and visual engagement.",
+    "color": "#4facfe",
+    "heroColor": "linear-gradient(to right, #4facfe 0%, #00f2fe 100%)",
+    "gallery": [
+      "./assets/poster2.png"
+    ]
+  },
+  {
+    "id": "business-card-Dhumketu",
+    "title": "Dhumketu Business Cards",
+    "category": "business-card",
+    "role": "Identity Design",
+    "services": "Stationery, Print",
+    "year": "2026",
+    "location": "Bangladesh",
+    "heading": "A professional first<br>impression in your pocket.",
+    "description": "Premium business card designs with spot UV and minimalist layout. Focused on tactile quality and clear information hierarchy.",
+    "color": "#ff9a9e",
+    "heroColor": "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)",
+    "gallery": [
+      "./assets/dhumketu.png"
+    ]
+  },
+  {
+    "id": "business-card-posh",
+    "title": "Posh Gadget Business Card",
+    "category": "business-card",
+    "role": "Identity Design",
+    "services": "Stationery, Print",
+    "year": "2026",
+    "location": "Bangladesh",
+    "heading": "A professional first<br>impression in your pocket.",
+    "description": "Premium business card designs with spot UV and minimalist layout. Focused on tactile quality and clear information hierarchy.",
+    "color": "rgba(161, 39, 245, 0.8)",
+    "heroColor": "linear-gradient(120deg, #333333 0%, #000000 100%)",
+    "gallery": [
+      "./assets/posh.png"
+    ]
+  },
+  {
+    "id": "saas",
+    "title": "SaaS Dashboard",
+    "category": "website",
+    "role": "UI/UX & Development",
+    "services": "Dashboard Design, Frontend",
+    "year": "2024",
+    "location": "Bangladesh",
+    "heading": "Simplifying complex workflows<br>with intuitive design.",
+    "description": "A data-heavy dashboard designed for maximum efficiency. Clean typography, subtle dark mode, and real-time analytics visualization were the core focus areas.",
+    "color": "#ffd6a5",
+    "heroColor": "linear-gradient(135deg, #ffd662 0%, #ffad06 100%)",
+    "image": "saas",
+    "gallery": [
+      "./assets/Saas.png",
+      "linear-gradient(45deg, #ee9ca7 0%, #ffafbd 100%)",
+      "linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%)",
+      "linear-gradient(180deg, #cc2b5e 0%, #753a88 100%)"
+    ]
+  },
+  {
+    "id": "restaurant",
+    "title": "Restaurant Web App",
+    "category": "website",
+    "role": "Full Stack",
+    "services": "Booking System, Reservation UI",
+    "year": "2024",
+    "location": "Bangladesh",
+    "heading": "A digital experience as<br>unique as the cuisine.",
+    "description": "Full-stack application featuring real-time table booking, interactive menus, and a clean admin dashboard for restaurant management.",
+    "color": "#b5ead7",
+    "heroColor": "linear-gradient(135deg, #b5ead7 0%, #88d3ce 100%)",
+    "image": "restaurant",
+    "gallery": [
+      "./assets/restru1.png",
+      "./assets/restru2.png",
+      "./assets/restru4.png",
+      "./assets/restru3.png"
+    ]
+  },
+  {
+    "id": "realestate",
+    "title": "Real Estate Portal",
+    "category": "website",
+    "role": "Design & Development",
+    "services": "Property Listing, CRM",
+    "year": "2023",
+    "location": "Bangladesh",
+    "heading": "Finding home starts<br>with a beautiful search.",
+    "description": "A comprehensive portal for luxury property listings. Advanced filtering, interactive maps, and high-quality image galleries define this project.",
+    "color": "#ffc8dd",
+    "heroColor": "linear-gradient(135deg, #ffc8dd 0%, #ff85a1 100%)",
+    "image": "realestate",
+    "gallery": [
+      "./assets/real-state.png",
+      "#555",
+      "#666"
+    ]
+  },
+  {
+    "id": "taskmanager",
+    "title": "Task Management Tool",
+    "category": "website",
+    "role": "Full Stack",
+    "services": "Productivity UI, Backend",
+    "year": "2023",
+    "location": "Bangladesh",
+    "heading": "Stay ahead of the curve<br>with smarter tooling.",
+    "description": "Performance-optimized task manager with drag-and-drop kanban boards, real-time collaboration, and automated reporting.",
+    "color": "#cdb4db",
+    "heroColor": "linear-gradient(135deg, #cdb4db 0%, #afccf0 100%)",
+    "image": "taskmanager",
+    "gallery": [
+      "./assets/task1.png",
+      "./assets/task1.png"
+    ]
+  },
+  {
+    "id": "healthcare",
+    "title": "Healthcare App UI",
+    "category": "uiux",
+    "role": "UI/UX Design",
+    "services": "Mobile App, Patient Portal",
+    "year": "2023",
+    "location": "Bangladesh",
+    "heading": "Patient care, redefined<br>for the digital age.",
+    "description": "Clean, accessible, and empathetic UI design for a healthcare platform focusing on appointment booking and health tracking.",
+    "color": "#a8edea",
+    "heroColor": "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+    "image": "healthcare",
+    "gallery": [
+      "./assets/health.png",
+      "./assets/health1.png",
+      "./assets/health2.png",
+      "./assets/health3.png"
+    ]
+  },
+  {
+    "id": "portfolio",
+    "title": "Portfolio Website",
+    "category": "website",
+    "role": "Design & Development",
+    "services": "Creative Direction, GSAP",
+    "year": "2023",
+    "location": "Bangladesh",
+    "heading": "Showcasing creativity<br>through interaction.",
+    "description": "High-performance personal portfolio with complex animations, smooth page transitions, and a focus on premium aesthetics.",
+    "color": "#30cfd0",
+    "heroColor": "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
+    "image": "portfolio",
+    "gallery": [
+      "./assets/portfolio.png",
+      "./assets/health3.png"
+    ]
+  },
+  {
+    "id": "edtech",
+    "title": "Learning Platform",
+    "category": "website",
+    "role": "Full Stack",
+    "services": "Course Management, Video",
+    "year": "2022",
+    "location": "Bangladesh",
+    "heading": "Education made easy,<br>anywhere, anytime.",
+    "description": "Scalable e-learning platform with course progress tracking, interactive quizzes, and seamless video streaming.",
+    "color": "#f7971e",
+    "heroColor": "linear-gradient(135deg, #f7971e 0%, #ffae88 100%)",
+    "image": "edtech",
+    "gallery": [
+      "./assets/tutor.png",
+      "./assets/Tutor1.png",
+      "./assets/Tutor2.png",
+      "./assets/Tutor3.png"
+    ]
+  },
+  {
+    "id": "travel",
+    "title": "Travel Booking App",
+    "category": "uiux",
+    "role": "UI/UX & Development",
+    "services": "Itinerary, Booking",
+    "year": "2022",
+    "location": "Bangladesh",
+    "heading": "Your next adventure<br>is just a click away.",
+    "description": "All-in-one travel app featuring destination guides, flight booking, and collaborative itinerary planning.",
+    "color": "#89f7fe",
+    "heroColor": "linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)",
+    "image": "travel",
+    "gallery": [
+      "./assets/travel.png",
+      "#999"
+    ]
+  },
+  {
+    "id": "branding",
+    "title": "Brand Identity System",
+    "category": "logo",
+    "role": "Design",
+    "services": "Identity, Guidelines",
+    "year": "2022",
+    "location": "Bangladesh",
+    "heading": "Telling stories through<br>powerful visual language.",
+    "description": "Comprehensive brand identity for a tech startup, including logo design, color palette, typography guidelines, and social media assets.",
+    "color": "#fd7043",
+    "heroColor": "linear-gradient(135deg, #fd7043 0%, #ff8a65 100%)",
+    "image": "branding",
+    "gallery": [
+      "./assets/Brand-Identity.jpg",
+      "./assets/Branding.png"
+    ]
+  },
+  {
+    "id": "social",
+    "title": "Social Media Dashboard",
+    "category": "website",
+    "role": "Full Stack",
+    "services": "Analytics, Automation",
+    "year": "2022",
+    "location": "Bangladesh",
+    "heading": "Engage and grow<br>with data-driven insights.",
+    "description": "Powerful dashboard for managing multiple social media accounts, featuring automated posting and advanced sentiment analysis.",
+    "color": "#a18cd1",
+    "heroColor": "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
+    "image": "social",
+    "gallery": [
+      "./assets/Social-media.jpg",
+      "#444"
+    ]
+  }
+]

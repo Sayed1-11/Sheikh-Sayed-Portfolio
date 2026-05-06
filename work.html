@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Work — Sheikh Sayed's selected projects and case studies." />
+  <title>Work — Sheikh Sayed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="transitions.css" />
+</head>
+
+<body class="page-work">
+
+
+  <!-- Navigation -->
+  <nav class="nav nav--light" id="nav">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo nav-logo--dark">© Sheikh Sayed</a>
+    </div>
+    <div class="nav-right">
+      <a href="work.html" class="nav-link nav-link--dark nav-link--active">Work</a>
+      <a href="about.html" class="nav-link nav-link--dark">About</a>
+      <a href="contact.html" class="nav-link nav-link--dark">Contact</a>
+    </div>
+    <button class="nav-menu-btn nav-menu-btn--dark" id="menu-btn" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <button class="sidebar-menu-btn sidebar-menu-btn--dark" id="sidebar-menu-btn" aria-label="Sidebar Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="work.html" class="mobile-nav-link">Work</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <svg class="sidebar-curve" viewBox="0 0 100 1000" preserveAspectRatio="none">
+      <path id="sidebar-path" d="M100,0 L100,1000 L100,1000 C100,1000 100,500 100,0 L100,0 Z"></path>
+    </svg>
+    <div class="sidebar-inner">
+      <div class="sidebar-top">
+        <div class="sidebar-nav-label">Navigation</div>
+        <nav class="sidebar-nav">
+          <a href="index.html" class="sidebar-link">Home</a>
+          <a href="work.html" class="sidebar-link active">Work</a>
+          <a href="about.html" class="sidebar-link">About</a>
+          <a href="contact.html" class="sidebar-link">Contact</a>
+        </nav>
+      </div>
+      <div class="sidebar-footer">
+        <div class="sidebar-nav-label">Socials</div>
+        <div class="sidebar-socials">
+          <a href="#" class="sidebar-social-link">GitHub</a>
+          <a href="#" class="sidebar-social-link">LinkedIn</a>
+          <a href="#" class="sidebar-social-link">Twitter</a>
+          <a href="#" class="sidebar-social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="page-header-inner">
+        <div class="page-header-top">
+          <span class="page-tag">SELECTED WORK</span>
+          <span class="page-count">15 Projects</span>
+        </div>
+        <h1 class="page-title massive-title">Creating next level digital products</h1>
+      </div>
+    </section>
+
+    <!-- Work Grid -->
+    <section class="work-page-section">
+      <!-- Fixed hover container for work images -->
+      <div class="work-hover-container" id="work-hover-container">
+        <div class="work-hover-images">
+          <!-- Images will be dynamically populated by JavaScript -->
+        </div>
+        <div class="work-hover-btn">
+          <span>View</span>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="website">Website</button>
+        <button class="filter-btn" data-filter="logo">Logo</button>
+        <button class="filter-btn" data-filter="poster">Poster</button>
+        <button class="filter-btn" data-filter="banner">Banner</button>
+        <button class="filter-btn" data-filter="business-card">Business Card</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+      </div>
+
+      <!-- Project List -->
+      <div class="project-list-massive">
+        <!-- Projects dynamically populated from projects.json -->
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <footer class="page-footer">
+      <div class="page-footer-inner">
+        <div class="footer-heading-wrap">
+          <div class="footer-avatar">
+            <img src="assets/sayed.png" alt="Sheikh Sayed" />
+          </div>
+          <h2 class="footer-heading">Let's work<br />together</h2>
+        </div>
+        <div class="footer-cta-wrap">
+          <span class="footer-arrow">↙</span>
+          <a href="contact.html" class="get-in-touch-btn"><span>Get in touch</span></a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <div>
+            <span class="footer-meta-label">VERSION</span>
+            <span class="footer-meta-val">2025 © Edition</span>
+          </div>
+          <div>
+            <span class="footer-meta-label">LOCAL TIME</span>
+            <span class="footer-meta-val" id="local-time">—</span>
+          </div>
+        </div>
+        <div class="footer-bottom-right">
+          <span class="footer-meta-label">SOCIALS</span>
+          <div class="social-links">
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+  <script src="pages.js"></script>
+  <script src="transitions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sheikh Sayed — Web Developer crafting premium digital experiences with modern technologies." />
+  <title>Sheikh Sayed — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="transitions.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+
+<body>
+
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-greeting">
+        <span class="hello-text" data-lang="hello">Hello</span>
+        <span class="hello-text" data-lang="bonjour">Bonjour</span>
+        <span class="hello-text" data-lang="namaste">नमस्ते</span>
+        <span class="hello-text" data-lang="ciao">Ciao</span>
+        <span class="hello-text" data-lang="ola">Olá</span>
+        <span class="hello-text" data-lang="oi">おい</span>
+        <span class="hello-text" data-lang="halla">Hallå</span>
+        <span class="hello-text" data-lang="guten">Guten tag</span>
+        <span class="hello-text" data-lang="hallo">Hallo</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-left">
+      <span class="nav-logo"> <a href="index.html" class="">© Sheikh Sayed</a></span>
+    </div>
+    <div class="nav-right">
+      <a href="work.html" class="nav-link" id="nav-work">Work</a>
+      <a href="about.html" class="nav-link" id="nav-about">About</a>
+      <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+    </div>
+    <button class="nav-menu-btn" id="menu-btn" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <button class="sidebar-menu-btn" id="sidebar-menu-btn" aria-label="Sidebar Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="work.html" class="mobile-nav-link">Work</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <svg class="sidebar-curve" viewBox="0 0 100 1000" preserveAspectRatio="none">
+      <path id="sidebar-path" d="M100,0 L100,1000 L100,1000 C100,1000 100,500 100,0 L100,0 Z"></path>
+    </svg>
+    <div class="sidebar-inner">
+      <div class="sidebar-top">
+        <div class="sidebar-nav-label">Navigation</div>
+        <nav class="sidebar-nav">
+          <a href="index.html" class="sidebar-link active">Home</a>
+          <a href="work.html" class="sidebar-link">Work</a>
+          <a href="about.html" class="sidebar-link">About</a>
+          <a href="contact.html" class="sidebar-link">Contact</a>
+        </nav>
+      </div>
+      <div class="sidebar-footer">
+        <div class="sidebar-nav-label">Socials</div>
+        <div class="sidebar-socials">
+          <a href="#" class="sidebar-social-link">GitHub</a>
+          <a href="#" class="sidebar-social-link">LinkedIn</a>
+          <a href="#" class="sidebar-social-link">Twitter</a>
+          <a href="#" class="sidebar-social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-img-wrapper">
+        <img src="assets/sayed.png" alt="Sheikh Sayed" class="hero-img" />
+      </div>
+
+      <div class="hero-info-left">
+        <div class="hero-location">
+          <span>Based in</span>
+          <strong>Bangladesh</strong>
+          <div class="location-icon">
+            <svg class="globe-svg" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="48" fill="none" stroke="white" stroke-width="2" />
+              <!-- Longitude lines -->
+              <ellipse cx="50" cy="50" rx="35" ry="48" fill="none" stroke="white" stroke-width="2" />
+              <ellipse cx="50" cy="50" rx="15" ry="48" fill="none" stroke="white" stroke-width="2" />
+              <line x1="50" y1="2" x2="50" y2="98" stroke="white" stroke-width="2" />
+              <!-- Latitude lines -->
+              <ellipse cx="50" cy="50" rx="48" ry="35" fill="none" stroke="white" stroke-width="2" />
+              <ellipse cx="50" cy="50" rx="48" ry="15" fill="none" stroke="white" stroke-width="2" />
+              <line x1="2" y1="50" x2="98" y2="50" stroke="white" stroke-width="2" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-info-right">
+        <span class="hero-arrow">↘</span>
+        <p class="hero-role">Startup <br />Builder</p>
+      </div>
+
+      <div class="hero-marquee-wrapper">
+        <div class="marquee">
+          <div class="marquee-track" id="marquee-track">
+            <span>Sheikh Sayed</span>
+            <span class="marquee-dash">—</span>
+            <span>Sheikh Sayed</span>
+            <span class="marquee-dash">—</span>
+            <span>Sheikh Sayed</span>
+            <span class="marquee-dash">—</span>
+            <span>Sheikh Sayed</span>
+            <span class="marquee-dash">—</span>
+            <span>Sheikh Sayed</span>
+            <span class="marquee-dash">—</span>
+            <span>Sheikh Sayed</span>
+            <span class="marquee-dash">—</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Intro Section -->
+    <section class="intro" id="about">
+      <div class="intro-inner">
+        <div class="intro-text-col">
+          <p class="intro-headline">
+            Building web experiences that make an impact. Turning bold ideas into clean, fast, and modern digital
+            products.
+          </p>
+        </div>
+        <div class="intro-side-col">
+          <p class="intro-desc">
+            My passion for clean code & interactive design positions me uniquely in the web development world. I build
+            fast, scalable, and delightful experiences.
+          </p>
+          <a href="/about.html" class="circle-btn" id="about-btn">
+            <span>About me</span>
+          </a>
+        </div>
+      </div>
+      <div class="section-label">RECENT WORK</div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work-page-section home-work-massive" id="work">
+      <!-- Fixed hover container for work images -->
+      <div class="work-hover-container" id="work-hover-container">
+        <div class="work-hover-images">
+          <!-- Images will be dynamically populated by JavaScript -->
+        </div>
+        <div class="work-hover-btn">
+          <span>View</span>
+        </div>
+      </div>
+
+      <div class="project-list-massive" id="home-project-list">
+        <!-- Projects dynamically populated from projects.json -->
+      </div>
+
+      <div class="work-more-wrap">
+        <a href="work.html" class="pill-btn" id="more-work-btn">
+          <span>More work</span>
+          <sup>15</sup>
+        </a>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <div class="gallery-row gallery-row-1">
+        <div class="gallery-item">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+        </div>
+      </div>
+
+      <div class="gallery-row gallery-row-2">
+        <div class="gallery-item">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Footer Section -->
+    <footer class="footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-heading-wrap">
+            <div class="footer-avatar">
+              <img src="assets/sayed.png" alt="Sheikh Sayed" />
+            </div>
+            <h2 class="footer-heading">Let's work<br />together</h2>
+          </div>
+          <div class="footer-cta-wrap">
+            <span class="footer-arrow">↙</span>
+            <a href="mailto:sheikhsayed@example.com" class="get-in-touch-btn" id="get-in-touch-btn">
+              <span>Get in touch</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-contacts">
+          <a href="mailto:sheikhsayed@example.com" class="contact-pill">sheikhsayed@example.com</a>
+          <a href="tel:+8801234567890" class="contact-pill">+880 123 456 7890</a>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <div>
+              <span class="footer-meta-label">VERSION</span>
+              <span class="footer-meta-val">2025 © Edition</span>
+            </div>
+            <div>
+              <span class="footer-meta-label">LOCAL TIME</span>
+              <span class="footer-meta-val" id="local-time">—</span>
+            </div>
+          </div>
+          <div class="footer-bottom-right">
+            <span class="footer-meta-label">SOCIALS</span>
+            <div class="social-links">
+              <a href="#" class="social-link">GitHub</a>
+              <a href="#" class="social-link">LinkedIn</a>
+              <a href="#" class="social-link">Twitter</a>
+              <a href="#" class="social-link">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+  <script src="pages.js"></script>
+  <script src="transitions.js"></script>
+</body>
+
+</html>

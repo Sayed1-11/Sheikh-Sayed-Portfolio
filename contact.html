@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact — Get in touch with Sheikh Sayed, Web Developer." />
+  <title>Contact — Sheikh Sayed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="transitions.css" />
+</head>
+
+<body class="page-contact">
+
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">© Sheikh Sayed</a>
+    </div>
+    <div class="nav-right">
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link nav-link--active">Contact</a>
+    </div>
+    <button class="nav-menu-btn" id="menu-btn" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <button class="sidebar-menu-btn" id="sidebar-menu-btn" aria-label="Sidebar Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="work.html" class="mobile-nav-link">Work</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <svg class="sidebar-curve" viewBox="0 0 100 1000" preserveAspectRatio="none">
+      <path id="sidebar-path" d="M100,0 L100,1000 L100,1000 C100,1000 100,500 100,0 L100,0 Z"></path>
+    </svg>
+    <div class="sidebar-inner">
+      <div class="sidebar-top">
+        <div class="sidebar-nav-label">Navigation</div>
+        <nav class="sidebar-nav">
+          <a href="index.html" class="sidebar-link">Home</a>
+          <a href="work.html" class="sidebar-link">Work</a>
+          <a href="about.html" class="sidebar-link">About</a>
+          <a href="contact.html" class="sidebar-link active">Contact</a>
+        </nav>
+      </div>
+      <div class="sidebar-footer">
+        <div class="sidebar-nav-label">Socials</div>
+        <div class="sidebar-socials">
+          <a href="#" class="sidebar-social-link">GitHub</a>
+          <a href="#" class="sidebar-social-link">LinkedIn</a>
+          <a href="#" class="sidebar-social-link">Twitter</a>
+          <a href="#" class="sidebar-social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="contact-hero-inner">
+        <div class="contact-hero-top">
+          <h1 class="contact-big-title reveal">Let's start a<br />project together</h1>
+          <div class="contact-hero-visual reveal">
+            <div class="contact-profile-wrap">
+              <img src="assets/sayed.png" alt="Sheikh Sayed" class="contact-profile-img" />
+            </div>
+            <div class="contact-arrow-icon">
+              <svg viewBox="0 0 100 100" class="arrow-down-svg">
+                <path d="M50 5 L50 95 M20 65 L50 95 L80 65" fill="none" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Contact Content (2-Column) -->
+    <section class="contact-main">
+      <div class="contact-main-inner">
+        
+        <!-- Left Column: Form -->
+        <div class="contact-form-column reveal">
+          <!-- Create an account at formspree.io and replace YOUR_FORM_ID below with your actual form ID to receive emails -->
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <!-- Step 1: Name -->
+            <div class="form-step">
+              <span class="step-num">01</span>
+              <div class="form-group">
+                <label for="name" class="form-label">What's your name?</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe *" required autocomplete="name" />
+              </div>
+            </div>
+
+            <!-- Step 2: Email -->
+            <div class="form-step">
+              <span class="step-num">02</span>
+              <div class="form-group">
+                <label for="email" class="form-label">What's your email?</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="john@doe.com *" required autocomplete="email" />
+              </div>
+            </div>
+
+            <!-- Step 3: Organization -->
+            <div class="form-step">
+              <span class="step-num">03</span>
+              <div class="form-group">
+                <label for="org" class="form-label">What's the name of your organization?</label>
+                <input type="text" id="org" name="org" class="form-input" placeholder="John & Doe ®" />
+              </div>
+            </div>
+
+            <!-- Step 4: Services -->
+            <div class="form-step">
+              <span class="step-num">04</span>
+              <div class="form-group">
+                <label for="services" class="form-label">What services are you looking for?</label>
+                <input type="text" id="services" name="services" class="form-input" placeholder="Web Design, Web Development ..." />
+              </div>
+            </div>
+
+            <!-- Step 5: Message -->
+            <div class="form-step">
+              <span class="step-num">05</span>
+              <div class="form-group">
+                <label for="message" class="form-label">Your message</label>
+                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Hello Sayed, can you help me with ... *" required rows="4"></textarea>
+              </div>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="form-submit circle-btn" id="form-submit">
+                <span class="submit-text">Send it!</span>
+              </button>
+            </div>
+
+            <!-- Success message -->
+            <div class="form-success" id="form-success">
+              <h3>Thanks!</h3>
+              <p>I'll get back to you as soon as possible.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right Column: Info & Socials -->
+        <div class="contact-info-column reveal">
+          <div class="info-group">
+            <h4 class="info-label">CONTACT DETAILS</h4>
+            <a href="mailto:sheikhsayed2023@gmail.com" class="info-link">sheikhsayed2023@gmail.com</a>
+            <a href="tel:+8801743020369" class="info-link">+880 1743020369</a>
+          </div>
+
+          <div class="info-group">
+            <h4 class="info-label">BUSINESS DETAILS</h4>
+            <p class="info-text">Sheikh Sayed Portfolio</p>
+            <p class="info-text">Location: Bangladesh</p>
+          </div>
+
+          <div class="info-group">
+            <h4 class="info-label">SOCIALS</h4>
+            <div class="social-list">
+              <a href="#" class="social-link magnetic">LinkedIn</a>
+              <a href="#" class="social-link magnetic">GitHub</a>
+              <a href="#" class="social-link magnetic">Twitter</a>
+              <a href="#" class="social-link magnetic">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Mini Footer Ribbon -->
+    <footer class="contact-ribbon">
+      <div class="ribbon-left">
+        <span>© 2025 Sheikh Sayed — Web Developer</span>
+      </div>
+      <div class="ribbon-right">
+        <span class="local-time-label">Local Time</span>
+        <span id="local-time-contact" class="local-time-val">—</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+  <script src="pages.js"></script>
+  <script src="transitions.js"></script>
+</body>
+
+</html>
