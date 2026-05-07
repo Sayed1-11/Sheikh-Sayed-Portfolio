@@ -696,8 +696,7 @@
         elementsToHide.forEach(el => el.style.display = 'none');
         
         if (successEl) {
-          successEl.style.display = 'block';
-          successEl.style.opacity = '1';
+          successEl.classList.add('visible');
         }
       } catch (error) {
         alert("Oops! There was a problem submitting your form. Please check your action URL.");

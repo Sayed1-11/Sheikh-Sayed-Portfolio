@@ -100,17 +100,24 @@
     <!-- Main Contact Content (2-Column) -->
     <section class="contact-main">
       <div class="contact-main-inner">
-        
+
         <!-- Left Column: Form -->
         <div class="contact-form-column reveal">
           <!-- Create an account at formspree.io and replace YOUR_FORM_ID below with your actual form ID to receive emails -->
-          <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/sheikhsayed2023@gmail.com"
+            method="POST">
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_subject" value="New Portfolio Inquiry!">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
             <!-- Step 1: Name -->
             <div class="form-step">
               <span class="step-num">01</span>
               <div class="form-group">
                 <label for="name" class="form-label">What's your name?</label>
-                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe *" required autocomplete="name" />
+                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe *" required
+                  autocomplete="name" />
               </div>
             </div>
 
@@ -119,7 +126,8 @@
               <span class="step-num">02</span>
               <div class="form-group">
                 <label for="email" class="form-label">What's your email?</label>
-                <input type="email" id="email" name="email" class="form-input" placeholder="john@doe.com *" required autocomplete="email" />
+                <input type="email" id="email" name="email" class="form-input" placeholder="john@doe.com *" required
+                  autocomplete="email" />
               </div>
             </div>
 
@@ -137,7 +145,8 @@
               <span class="step-num">04</span>
               <div class="form-group">
                 <label for="services" class="form-label">What services are you looking for?</label>
-                <input type="text" id="services" name="services" class="form-input" placeholder="Web Design, Web Development ..." />
+                <input type="text" id="services" name="services" class="form-input"
+                  placeholder="Web Design, Web Development ..." />
               </div>
             </div>
 
@@ -146,7 +155,8 @@
               <span class="step-num">05</span>
               <div class="form-group">
                 <label for="message" class="form-label">Your message</label>
-                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Hello Sayed, can you help me with ... *" required rows="4"></textarea>
+                <textarea id="message" name="message" class="form-input form-textarea"
+                  placeholder="Hello Sayed, can you help me with ... *" required rows="4"></textarea>
               </div>
             </div>
 
@@ -195,7 +205,7 @@
     <!-- Mini Footer Ribbon -->
     <footer class="contact-ribbon">
       <div class="ribbon-left">
-        <span>© 2025 Sheikh Sayed — Web Developer</span>
+        <span>© 2026 Sheikh Sayed — Startup Builder</span>
       </div>
       <div class="ribbon-right">
         <span class="local-time-label">Local Time</span>
