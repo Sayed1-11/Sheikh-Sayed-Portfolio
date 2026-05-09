@@ -1797,3 +1797,131 @@
     gap: 20px 30px !important;
   }
 }
+
+/* =========================================
+   CATEGORY SPECIFIC LAYOUTS
+   ========================================= */
+
+/* Logo / Logo Design */
+.cat-logo .project-hero-image-wrap {
+    background: #f8f8f8; 
+    aspect-ratio: 4/3;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cat-logo .project-hero-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 60px;
+}
+
+/* Banner / Poster / Business Card */
+.cat-banner .project-hero-image-wrap,
+.cat-poster .project-hero-image-wrap,
+.cat-business-card .project-hero-image-wrap {
+    aspect-ratio: 16/10;
+}
+
+/* General overrides for non-website categories */
+body:not(.cat-website) #visit-btn-container {
+    display: none !important;
+}
+
+/* UIUX category specifics */
+.cat-uiux .project-hero-image-wrap {
+    aspect-ratio: 16/9;
+}
+
+
+
+/* =========================================
+   PROJECT DETAIL IMPROVEMENTS: RATIOS & VIDEO
+   ========================================= */
+
+.project-video-section {
+    padding: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.video-container-wrap {
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.15);
+}
+
+.video-inner video {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.project-gallery {
+    padding: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.gallery-item-wrap {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #f0f0f0;
+    transition: transform 1.2s var(--ease), opacity 1.2s var(--ease);
+}
+
+.gallery-img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Default to cover for a clean look */
+}
+
+/* Category Specific Ratio/Fit Control */
+.cat-logo .gallery-img-fluid,
+.cat-poster .gallery-img-fluid,
+.cat-business-card .gallery-img-fluid {
+    object-fit: contain;
+    background: #fdfdfd;
+    padding: 60px;
+    max-height: 80vh;
+}
+
+/* Banner: often very wide, let it be natural */
+.cat-banner .gallery-img-fluid {
+    object-fit: contain;
+}
+
+/* UI/UX: often long scrolls or mobile screens */
+.cat-uiux .gallery-img-fluid,
+.cat-ui .gallery-img-fluid,
+.cat-ux .gallery-img-fluid {
+    object-fit: contain;
+    background: #f7f7f7;
+    max-height: 90vh; /* Don't let it be infinitely tall */
+}
+
+/* Specific ratio class fallback if needed */
+.ratio-poster { aspect-ratio: 2/3; }
+.ratio-banner { aspect-ratio: 3/1; }
+.ratio-business-card { aspect-ratio: 3.5/2; }
+
+@media (max-width: 768px) {
+    .project-gallery {
+        padding: 20px;
+        gap: 40px;
+    }
+    .cat-logo .gallery-img-fluid,
+    .cat-poster .gallery-img-fluid {
+        padding: 30px;
+    }
+}
+

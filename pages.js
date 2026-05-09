@@ -189,7 +189,7 @@
      5. SCROLL REVEAL
   ------------------------------------------ */
   function observeReveal() {
-    const revealEls = document.querySelectorAll('.reveal');
+    const revealEls = document.querySelectorAll('.reveal:not(.visible)');
     if (!revealEls.length) return;
     const obs = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -198,7 +198,7 @@
           obs.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.01, rootMargin: '0px 0px 300px 0px' });
     revealEls.forEach(el => obs.observe(el));
   }
 
@@ -239,7 +239,7 @@
       loadProjectDetails();
       initHomeGallery(); // Now called here
       initWorkHover();
-      if (window.observeReveal) window.observeReveal();
+      observeReveal();
     } catch (error) {
       console.error('Error loading projects:', error);
       // Fallback or alert for local file access issues
@@ -545,6 +545,12 @@
 
     if (!project) return;
 
+    // Add category class to body
+    document.body.classList.forEach(cls => {
+      if (cls.startsWith('cat-')) document.body.classList.remove(cls);
+    });
+    document.body.classList.add(`cat-${project.category}`);
+
     // Update Meta Title
     document.title = `${project.title} — Sheikh Sayed`;
 
@@ -590,21 +596,67 @@
     if (introHeadingEl) introHeadingEl.innerHTML = project.heading;
     if (introTextEl) introTextEl.textContent = project.description;
 
-    // Populate Gallery
-    const galleryItems = document.querySelectorAll('.parallax-img');
-    project.gallery.forEach((bg, index) => {
-      if (galleryItems[index]) {
-        if (bg.includes('linear-gradient') || bg.startsWith('#')) {
-          galleryItems[index].style.background = bg;
-        } else {
-          galleryItems[index].style.backgroundImage = `url("${bg}")`;
-          galleryItems[index].style.backgroundSize = 'cover';
-          galleryItems[index].style.backgroundPosition = 'center';
-        }
-        const textPlaceholder = galleryItems[index].querySelector('.img-placeholder-text');
-        if (textPlaceholder) textPlaceholder.style.display = 'none';
+    // Category specific UI
+    const visitBtnContainer = document.getElementById('visit-btn-container');
+    const visitBtn = document.getElementById('visit-btn');
+    
+    if (visitBtnContainer) {
+      if (project.category === 'website' && project.link) {
+        visitBtnContainer.style.display = 'block';
+        if (visitBtn) visitBtn.href = project.link;
+      } else {
+        visitBtnContainer.style.display = 'none';
       }
-    });
+    }
+
+    // Video Section
+    const videoSection = document.getElementById('project-video-section');
+    const videoEl = document.getElementById('project-video');
+    if (videoSection && videoEl) {
+      if (project.video) {
+        videoSection.style.display = 'block';
+        videoEl.querySelector('source').src = project.video;
+        videoEl.load();
+      } else {
+        videoSection.style.display = 'none';
+      }
+    }
+
+    // Populate Gallery
+    const galleryContainer = document.getElementById('project-gallery');
+    if (galleryContainer && project.gallery && Array.isArray(project.gallery)) {
+      galleryContainer.innerHTML = ''; // Clear existing
+      
+      if (project.gallery.length === 0) {
+        galleryContainer.innerHTML = '<p style="text-align:center; padding: 100px; color: #888;">No gallery images available for this project.</p>';
+      }
+
+      const galleryMedia = project.gallery.length > 1 ? project.gallery.slice(1) : project.gallery;
+      
+      galleryMedia.forEach((asset, index) => {
+        const itemWrap = document.createElement('div');
+        itemWrap.className = 'gallery-item-wrap reveal parallax-img';
+        
+        // Check if it's a color/gradient or an image
+        if (asset.includes('linear-gradient') || asset.startsWith('#')) {
+          itemWrap.style.background = asset;
+          itemWrap.style.minHeight = '60vh';
+        } else {
+          // It's an image
+          const img = document.createElement('img');
+          img.src = asset;
+          img.alt = `${project.title} screenshot ${index + 1}`;
+          img.className = 'gallery-img-fluid';
+          
+          // Apply specific classes based on category for ratio control
+          img.classList.add(`ratio-${project.category}`);
+          
+          itemWrap.appendChild(img);
+        }
+        
+        galleryContainer.appendChild(itemWrap);
+      });
+    }
 
     // Handle Next Case
     const currentIndex = projectKeys.indexOf(projectId);
@@ -623,9 +675,12 @@
     }
 
     // Re-apply magnetic to dynamic visit button
-    const visitBtn = document.getElementById('visit-btn');
     if (visitBtn) magneticButton(visitBtn);
 
+    // Re-run observeReveal to catch new elements
+    setTimeout(() => {
+      observeReveal();
+    }, 100);
   }
 
   /* ------------------------------------------
