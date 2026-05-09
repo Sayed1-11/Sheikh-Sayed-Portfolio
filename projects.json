@@ -17,7 +17,7 @@
       "./assets/project-hero-1 (3).png",
       "./assets/project-hero-1 (4).png"
     ],
-    "link": "https://example.com/ecommerce"
+    "link": "https://stylehub-11c33.web.app/"
   },
   {
     "id": "posh-logo",
@@ -156,7 +156,7 @@
       "./assets/restru4.png",
       "./assets/restru3.png"
     ],
-    "link": "https://example.com/restaurant"
+    "link": "https://pizzaburg.onrender.com/"
   },
   {
     "id": "realestate",
@@ -195,7 +195,7 @@
       "./assets/task1.png",
       "./assets/task1.png"
     ],
-    "link": "https://example.com/taskmanager"
+    "link": "https://taskbucks-4a4ba.web.app/"
   },
   {
     "id": "healthcare",
@@ -255,7 +255,7 @@
       "./assets/Tutor2.png",
       "./assets/Tutor3.png"
     ],
-    "link": "https://example.com/edtech"
+    "link": "https://bhai-learning.onrender.com/"
   },
   {
     "id": "travel",
